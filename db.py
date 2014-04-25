@@ -1,7 +1,11 @@
 from csv_io import *
+import os
 
-data_path = 'C:/users/sfonoimoana/documents/flask_apps/bootstrap/static/data.csv'
-standard_path = 'C:/users/sfonoimoana/documents/flask_apps/bootstrap/static/standards_data.csv'
+#print os.getcwd()
+cwd = os.getcwd()
+
+data_path = cwd+'/static/data.csv'
+standard_path = cwd+'/static/standards_data.csv'
 
 # 0-teacher 1-domain 2-standard 3-skill 4-skill_code 5-assessment 6-1 7-2 8-3 9-4
 # 0-skill 1-skill_code 2-standard 3-standard_index 4-standard_code 5-standard_description 6-cluster 7-cluster_description 8-domain 9-domain_description 10-standard_index_code
